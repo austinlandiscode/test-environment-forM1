@@ -45,4 +45,14 @@ describe ('Calculator', () => {
     const human = new Calculator('','Female','North America','');
     expect(human.checkYearsLeft()).toEqual(81);
     });
+
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in South America', () => {
+    const human = new Calculator('','Male','South America','');
+    expect(human.checkYearsLeft()).toEqual(72);
+    });
+
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in South America', () => {
+    const human = new Calculator('','Female','South America','');
+    expect(human.checkYearsLeft()).toEqual(78);
+    });
 });
