@@ -81,4 +81,8 @@ describe ('Calculator', () => {
     expect(human.checkYearsLeft()).toEqual(62);
     });
   
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Africa', () => {
+    const human = new Calculator('','Female','Africa','');
+    expect(human.checkYearsLeft()).toEqual(65);
+    });
 });
