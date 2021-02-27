@@ -55,9 +55,24 @@ describe ('Calculator', () => {
     const human = new Calculator('','Female','South America','');
     expect(human.checkYearsLeft()).toEqual(78);
     });
-  
+
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Europe', () => {
     const human = new Calculator('','Male','Europe','');
     expect(human.checkYearsLeft()).toEqual(79);
+    });
+
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Europe', () => {
+    const human = new Calculator('','Female','Europe','');
+    expect(human.checkYearsLeft()).toEqual(84);
+    });
+
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Asia', () => {
+    const human = new Calculator('','Male','Asia','');
+    expect(human.checkYearsLeft()).toEqual(76);
+    });
+
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Asia', () => {
+    const human = new Calculator('','Male','Asia','');
+    expect(human.checkYearsLeft()).toEqual(80);
     });
 });
