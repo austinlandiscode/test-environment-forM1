@@ -64,7 +64,7 @@ describe ('Calculator', () => {
     expect(human.yearsLeftOnPlanet).toEqual(37);
     });
 
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Asia', () => {
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male on Mars', () => {
     const human = new Calculator('10','Male','Mars');
     expect(human.yearsLeftOnPlanet).toEqual(34);
     });
@@ -76,6 +76,10 @@ describe ('Calculator', () => {
   
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male on Jupiter', () => {
     const human = new Calculator('10','Male','Jupiter');
-    expect(human.yearsLeftOnPlanet).toEqual(0);
+    expect(human.yearsLeftOnPlanet).toEqual(6);
+    });
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male on Jupiter', () => {
+    const human = new Calculator('1000','Male','Jupiter');
+    expect(human.yearsLeftOnPlanet).toEqual(`You're dead yo you are 78 over your life`);
     });
 });

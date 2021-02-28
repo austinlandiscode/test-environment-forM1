@@ -38,6 +38,9 @@ export class Calculator {
     } else {
       planetYearsLeft = lifeExpectancy - this.age;
     }
+    if (planetYearsLeft < 0) {
+      planetYearsLeft = `You're dead yo you are ${planetYearsLeft * -1} over your life`
+    }
     return planetYearsLeft;
   }
 }
