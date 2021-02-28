@@ -44,9 +44,9 @@ describe ('Calculator', () => {
     expect(human.yearsLeftOnPlanet).toEqual(292)
   });
 
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Mercury', () => {
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male on Mercury', () => {
     const human = new Calculator('10','Male','Mercury');
-    expect(human.ageOnPlanet).toEqual(72);
+    expect(human.yearsLeftOnPlanet).toEqual(72);
     });
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in South America', () => {
