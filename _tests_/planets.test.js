@@ -59,14 +59,14 @@ describe ('Calculator', () => {
     expect(human.yearsLeftOnPlanet).toEqual(104);
     });
 
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Europe', () => {
-    const human = new Calculator('','Female','Europe','');
-    expect(human.checkPlanetYearsLeft()).toEqual(84);
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female on Mars', () => {
+    const human = new Calculator('10','Female','Mars');
+    expect(human.yearsLeftOnPlanet).toEqual(37);
     });
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Asia', () => {
-    const human = new Calculator('','Male','Asia','');
-    expect(human.checkPlanetYearsLeft()).toEqual(76);
+    const human = new Calculator('10','Male','Mars');
+    expect(human.yearsLeftOnPlanet).toEqual(0);
     });
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Asia', () => {
