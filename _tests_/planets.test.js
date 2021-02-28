@@ -74,8 +74,8 @@ describe ('Calculator', () => {
     expect(human.yearsLeftOnPlanet).toEqual(6);
     });
   
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Africa', () => {
-    const human = new Calculator('','Male','Africa','');
-    expect(human.checkPlanetYearsLeft()).toEqual(62);
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male on Jupiter', () => {
+    const human = new Calculator('10','Male','Jupiter');
+    expect(human.yearsLeftOnPlanet).toEqual(0);
     });
 });
