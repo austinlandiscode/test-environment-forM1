@@ -49,9 +49,9 @@ describe ('Calculator', () => {
     expect(human.yearsLeftOnPlanet).toEqual(271);
     });
 
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in South America', () => {
-    const human = new Calculator('','Female','South America','');
-    expect(human.checkPlanetYearsLeft()).toEqual(78);
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female on Venus', () => {
+    const human = new Calculator('10','Female','Venus');
+    expect(human.yearsLeftOnPlanet).toEqual(113);
     });
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Europe', () => {

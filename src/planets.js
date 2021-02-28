@@ -30,11 +30,11 @@ export class Calculator {
     if (this.planet === 'Mercury') {
       planetYearsLeft = (Math.floor(lifeExpectancy / 0.24) - this.ageOnPlanet); 
     } else if (this.planet === 'Venus') {
-      planetYearsLeft = (Math.floor(this.age / 0.62));
+      planetYearsLeft = (Math.floor(lifeExpectancy / 0.62) - this.ageOnPlanet);
     } else if (this.planet === 'Mars') {
-      planetYearsLeft = (Math.floor(this.age / 1.88));
+      planetYearsLeft = (Math.floor(lifeExpectancy/ 1.88) - this.ageOnPlanet);
     } else if (this.planet === 'Jupiter') {
-      planetYearsLeft = (Math.floor(this.age / 11.86));
+      planetYearsLeft = (Math.floor(lifeExpectancy / 11.86) - this.ageOnPlanet);
     } else {
       planetYearsLeft = lifeExpectancy - this.age;
     }
