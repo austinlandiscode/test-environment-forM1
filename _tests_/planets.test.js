@@ -41,12 +41,12 @@ describe ('Calculator', () => {
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female on Mercury', () => {
     const human = new Calculator(10,'Female','Mercury');
-    expect(human.ageOnPlanet).toEqual(41)
+    expect(human.yearsLeftOnPlanet).toEqual(292)
   });
 
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in South America', () => {
-    const human = new Calculator('','Male','South America','');
-    expect(human.checkPlanetYearsLeft()).toEqual(72);
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Mercury', () => {
+    const human = new Calculator('10','Male','Mercury');
+    expect(human.ageOnPlanet).toEqual(72);
     });
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in South America', () => {

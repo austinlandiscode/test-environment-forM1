@@ -4,7 +4,7 @@ export class Calculator {
     this.sex = sex;
     this.planet = planet;
     this.ageOnPlanet = this.checkPlanetYears();
-    
+    this.yearsLeftOnPlanet = this.checkPlanetYearsLeft();
   }
   checkPlanetYears() {
     let planetYears = 0;
@@ -28,7 +28,7 @@ export class Calculator {
       lifeExpectancy -= 5; 
     }
     if (this.planet === 'Mercury') {
-      planetYearsLeft = (Math.floor(this.age / 0.24) - this.ageOnPlanet);
+      planetYearsLeft = (Math.floor(lifeExpectancy / 0.24) - this.ageOnPlanet); 
     } else if (this.planet === 'Venus') {
       planetYearsLeft = (Math.floor(this.age / 0.62));
     } else if (this.planet === 'Mars') {
