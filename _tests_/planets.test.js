@@ -66,7 +66,7 @@ describe ('Calculator', () => {
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Asia', () => {
     const human = new Calculator('10','Male','Mars');
-    expect(human.yearsLeftOnPlanet).toEqual(0);
+    expect(human.yearsLeftOnPlanet).toEqual(34);
     });
 
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Asia', () => {
