@@ -69,28 +69,13 @@ describe ('Calculator', () => {
     expect(human.yearsLeftOnPlanet).toEqual(34);
     });
 
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Asia', () => {
-    const human = new Calculator('','Female','Asia','');
-    expect(human.checkPlanetYearsLeft()).toEqual(80);
+  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female on Jupiter', () => {
+    const human = new Calculator('10','Female','Jupiter');
+    expect(human.yearsLeftOnPlanet).toEqual(6);
     });
   
   test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Africa', () => {
     const human = new Calculator('','Male','Africa','');
     expect(human.checkPlanetYearsLeft()).toEqual(62);
-    });
-  
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Female in Africa', () => {
-    const human = new Calculator('','Female','Africa','');
-    expect(human.checkPlanetYearsLeft()).toEqual(65);
-    });
-
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Australia', () => {
-    const human = new Calculator('','Male','Australia','');
-    expect(human.checkPlanetYearsLeft()).toEqual(81);
-    });
-
-  test ('should take an age, convert it to years on specified planet, then convert it to years left to live for a Male in Australia', () => {
-    const human = new Calculator('','Female','Australia','');
-    expect(human.checkPlanetYearsLeft()).toEqual(85);
     });
 });
