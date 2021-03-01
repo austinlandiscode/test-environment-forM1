@@ -1,35 +1,39 @@
-# (Blank Template)
+# Planet Age Calculator
 
-#### (Brief Description of Application)
+## Description
+_This application is designed to provide a user their age on different planets based on their input._
 
-#### By (Your Name Here)
+### By: Austin Landis
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* JavaScript
+* JQuery
+* Bootstrap
+* Babel
+* Eslint
+* Jest
 
-## Description
+
+## Detailed Description
+
+_This web application is designed to take an inputs from the user and use those values to let them know how old they are on different planets, it will also tell them how many years they have to live on those planets. If they have lived past their life expectancy, it will let them know that as well._
+
+## Specs
+* See '_tests_/planets.test.js'
 
 ## Setup/Installation Requirements
+* Click on the green download code button. Click on the clipboard icon.
+* Open your terminal, navigate to the preffered storage location on your desktop.
+* Type git clone and then paste the cloned project.
+* CD into the cloned project.
+* type code . to open the project in your code editor.
+OR
+* Drag cloned project into code editor if your command pallette does not support code .
 
-### Without Github template clone:
-* Clone Repo
-* Delete .git if needing a clean commit history
-* Initilize git
-* Add remote repository to new git
-* Make first commit only adding .gitignore to commit
-* Open new repo to begin npm initilization
-
-### With Github
-* Press use this template
-* Create new repo
-* Clone new repo down to
-* Open new repo to begin npm initilization
-
-### Npm Initilization
+## Npm Initilization
 * Verify package.json has correct npm packages for needs
 * Modify title on line 18 of webpack.config.js
 * Modify title on line 2 of package.json
@@ -38,12 +42,24 @@
 * Run ```npm init -y```
 * Run ```npm install```
 * Verify install works by running ```npm run test``` and ```npm run build```
+* To open your project in a browser, perform ```npm run start``` in your terminal
 
-* * *
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Application was not designed for edge cases.
+* Will update later.
+
+## License
+
+Copyright 2021 Austin Landis
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+## Contact Information
+austinlandiscode@gmail.com
+
 
 ## License
 
